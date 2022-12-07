@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+
+html, body {
+    max-width: 100%;
+	overflow-x: hidden;
+	font-family: 'Pacifico', 'Kaushan Script', 'Trebuchet MS', sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+.nav-link {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: 'Kaushan Script', 'Pacifico', 'Trebuchet MS', sans-serif;
+}
+
+.nav-link:hover {
+	background-color: #2394a3;
+	color: white;
+}
+
+.bg-primary {
+	background-color: #922667 !important;
+}
+
+.bg-secondary {
+	background-color: #216093 !important;
+}
