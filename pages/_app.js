@@ -2,8 +2,14 @@ import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/owl.css';
 import Header from '../components/Header';
+import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
+  
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
   return (
     <>
       <Head>
