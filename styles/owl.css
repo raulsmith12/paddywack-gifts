@@ -1,9 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
-html, body {
+html {
     max-width: 100%;
 	overflow-x: hidden;
-	font-family: 'Pacifico', 'Kaushan Script', 'Trebuchet MS', sans-serif;
 }
 
 .hidden {

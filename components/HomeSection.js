@@ -23,7 +23,8 @@ const HomeSection = () => {
                 <div className="col-md-4 col-sm-12 text-center" key={i.id}>
                     <Link href={i.link_url} className="text-decoration-none">
                         <img src={i.icon_url} width="25%" alt="like" /><br /><br />
-                        <h3 className="text-black">{i.description}</h3>
+                        <h2 className="display-6 text-black text-uppercase">{i.title}</h2>
+                        <h6 className="text-black">{i.description}</h6>
                     </Link>
                 </div>
             ))}

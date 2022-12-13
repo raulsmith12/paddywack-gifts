@@ -2,6 +2,7 @@ import Head from 'next/head';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/owl.css';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
@@ -19,6 +20,8 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Header />
       <Component {...pageProps} />
+      <div className="my-1 py-1">&nbsp;</div>
+      <Footer />
     </>
   )
 }
