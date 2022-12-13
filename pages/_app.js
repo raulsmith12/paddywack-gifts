@@ -17,10 +17,8 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
         <link rel="icon" href="favicon.ico" />
       </Head>
-      <div className="container-fluid px-0">
-        <Header />
-        <Component {...pageProps} />
-      </div>
+      <Header />
+      <Component {...pageProps} />
     </>
   )
 }

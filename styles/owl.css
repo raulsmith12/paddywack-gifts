@@ -28,3 +28,28 @@ html, body {
 .bg-secondary {
 	background-color: #216093 !important;
 }
+
+.home-slider-container {
+	background: url(https://paddywackgifts.com/img/drops-feather-feathers-66875.jpg) no-repeat center center;
+	text-align: center;
+	min-height: 1rem;
+}
+
+@media (min-width: 576px) {
+	.home-slider-container {
+		padding: 4rem 2rem;
+		margin-bottom: 2rem;
+	}
+}
+
+@media (max-width: 575px) {
+	.home-slider-container {
+		padding: 2rem 1rem;
+		margin-bottom: 2rem;
+	}
+}
+
+.carousel-container {
+	height: 25rem;
+	overflow: hidden
+}
