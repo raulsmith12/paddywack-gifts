@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/owl.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Transition from '../components/Transition';
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
@@ -19,7 +20,9 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <Header />
-      <Component {...pageProps} />
+      <Transition>
+        <Component {...pageProps} />
+      </Transition>
       <div className="my-1 py-1">&nbsp;</div>
       <Footer />
     </>
