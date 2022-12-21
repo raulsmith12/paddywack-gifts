@@ -20,11 +20,11 @@ html {
 	color: white;
 }
 
-.bg-primary {
+.bg-primary, .btn-primary {
 	background-color: #922667 !important;
 }
 
-.bg-secondary {
+.bg-secondary, .btn-secondary {
 	background-color: #216093 !important;
 }
 
@@ -51,4 +51,18 @@ html {
 .carousel-container {
 	height: 25rem;
 	overflow: hidden
+}
+
+.card-img-placeholder {
+	height: 19rem !important;
+	width: 100% !important;
+	overflow: hidden !important;
+	position: relative !important;
+}
+
+.card-img-placeholder img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	min-height: 19rem;
 }
