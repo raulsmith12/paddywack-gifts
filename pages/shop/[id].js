@@ -25,7 +25,10 @@ const Item = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col">
+                <div className="col-2">
+                    <Link href="/shop">Back to Shop</Link>
+                </div>
+                <div className="col-10">
                     <h1 className="display-2">{item.name}</h1>
                 </div>
             </div>
