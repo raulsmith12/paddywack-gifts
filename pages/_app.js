@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <>
+    <div className="full-height">
       <Head>
         <title>Paddy Wack Homemade Gifts</title>
         <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
@@ -23,9 +23,9 @@ function MyApp({ Component, pageProps }) {
       <Transition>
         <Component {...pageProps} />
       </Transition>
-      <div className="my-1 py-1">&nbsp;</div>
+      <div className="my-5 py-5">&nbsp;</div>
       <Footer />
-    </>
+    </div>
   )
 }
 

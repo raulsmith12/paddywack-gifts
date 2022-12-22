@@ -28,13 +28,13 @@ const Header = () => {
                                         <Link href="/gallery" className="nav-link">Gallery</Link>
                                     </li>
                                     <li className="nav-item px-1">
-                                        <Link href="/" className="nav-link">Contact</Link>
+                                        <Link href="/contact" className="nav-link">Contact</Link>
                                     </li>
                                     <li className="nav-item px-1">
-                                        <Link href="/" className="nav-link">Join</Link>
+                                        <Link href="/join" className="nav-link">Join</Link>
                                     </li>
                                     <li className="nav-item px-1">
-                                        <Link href="/" className="nav-link">Creator</Link>
+                                        <Link href="/creator" className="nav-link">Creator</Link>
                                     </li>
                                 </ul>
                             </div>
