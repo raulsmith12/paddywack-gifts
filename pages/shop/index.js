@@ -36,7 +36,7 @@ const Shop = () => {
                                         </div>
                                         <div className="card-body">
                                             <h5 className="card-title">{i.name}</h5>
-                                            <Link href="/" className="btn btn-secondary">Show More</Link>
+                                            <Link href={"/shop/" + i.id} className="btn btn-secondary">Show More</Link>
                                         </div>
                                     </div>
                                 </div>
