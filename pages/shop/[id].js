@@ -7,6 +7,7 @@ const Item = () => {
     const router = useRouter();
     const { id } = router.query;
     const [item, setItem] = useState([]);
+    const [images, setImages] = useState([]);
     const [image, setImage] = useState();
 
     useEffect(() => {
@@ -16,6 +17,7 @@ const Item = () => {
             );
 
             setItem(itemSet.data.data);
+            setImages(itemSet.data.data.images);
             setImage(itemSet.data.data.images[0].image_url);
         };
 
@@ -41,7 +43,7 @@ const Item = () => {
                             </div>
                         </div>
                         <div className="row ms-1">
-                            {item.images.map(i => (
+                            {images.map(i => (
                                 <div className="col-2 px-0" key={i.id}>
                                     <a href="#" onMouseOver={() => setImage(i.image_url)}>
                                         <img src={i.thumbnail_url} width="100%" alt="thumbnail" />
