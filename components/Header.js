@@ -5,7 +5,7 @@ const Header = () => {
         <div className="container-fluid px-0">
             <div className="row mx-0">
                 <div className="col px-0">
-                    <nav className="navbar navbar-dark navbar-expand-lg bg-primary py-0">
+                    <nav className="navbar navbar-dark navbar-expand-lg bg-primo py-0">
                         <div className="container-fluid">
                             <Link href="/" className="navbar-brand">
                                 <img src="https://paddywackgifts.com/img/logo_white_transparent.png" height="54" alt="Paddy Wack Homemade Gifts" />

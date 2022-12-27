@@ -65,7 +65,7 @@ const JoinForm = () => {
                     <div className="col-md-6 col-sm-12">
                         <label htmlFor="message" className="form-label">Message/Comments</label>
                         <textarea className="form-control mb-3" id="message" name="message" required defaultValue={message} onChange={e => setMessage(e.target.value)} rows="5" />
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button type="submit" className="btn btn-primo">Submit</button>
                     </div>
                 </div>
             </div>

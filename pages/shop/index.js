@@ -30,13 +30,13 @@ const Shop = () => {
                         <div className="row justify-content-center">
                             {items.map(i => (
                                 <div className="col-4 text-center" key={i.id}>
-                                    <div className="card bg-primary text-white my-3">
+                                    <div className="card bg-primo text-white my-3">
                                         <div className="card-img-placeholder">
                                             <img src={i.images[0].thumbnail_url} width="100%" alt={i.name} className="card-img-top" />
                                         </div>
                                         <div className="card-body">
                                             <h5 className="card-title">{i.name}</h5>
-                                            <Link href={"/shop/" + i.id} className="btn btn-secondary">Show More</Link>
+                                            <Link href={"/shop/" + i.id} className="btn btn-segundo">Show More</Link>
                                         </div>
                                     </div>
                                 </div>

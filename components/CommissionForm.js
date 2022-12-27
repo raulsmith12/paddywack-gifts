@@ -132,7 +132,7 @@ const CommissionForm = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button type="submit" className="btn btn-primary">Submit</button>
+                            <button type="submit" className="btn btn-primo">Submit</button>
                         </form>
                     </div>
                     <div className="col-md-6 col-sm-12">
