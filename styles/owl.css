@@ -24,6 +24,10 @@ html {
 	background-color: #922667 !important;
 }
 
+.btn-primo, .btn-segundo {
+	color: white;
+}
+
 .bg-segundo, .btn-segundo {
 	background-color: #216093 !important;
 }
