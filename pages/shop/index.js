@@ -1,9 +1,11 @@
 import axios from "axios";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import SearchBox from "../../components/SearchBox";
 
 const Shop = () => {
     const [items, setItems] = useState([]);
+    const [search, setSearch] = useState('');
 
     useEffect(() => {
         async function fetchData() {
@@ -17,6 +19,10 @@ const Shop = () => {
         fetchData();
     });
 
+    const filteredItems = items.filter((item) => {
+        return item.name.toLocaleLowerCase().includes(search);
+    });
+
     return (
         <div className="container-fluid">
             <div className="row">
@@ -25,10 +31,21 @@ const Shop = () => {
                 </div>
             </div>
             <div className="row">
+                <div className="col text-right">
+                    <div className="container">
+                        <div className="row mx-5 px-5">
+                            <div className="col-12 mx-5 px-5">
+                                <SearchBox searchChange={setSearch} />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="row">
                 <div className="col">
                     <div className="container">
                         <div className="row justify-content-center">
-                            {items.map(i => (
+                            {filteredItems.map(i => (
                                 <div className="col-4 text-center" key={i.id}>
                                     <div className="card bg-primo text-white my-3">
                                         <div className="card-img-placeholder">
