@@ -11,7 +11,6 @@ const Gallery = () => {
                 'https://backend.paddywackgifts.com/public/api/galleries'
             );
 
-            console.log(galleryImages.data.data);
             setImages(galleryImages.data.data.reverse());
         }
 

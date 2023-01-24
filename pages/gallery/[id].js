@@ -14,7 +14,6 @@ const Item = () => {
                 `https://backend.paddywackgifts.com/public/api/galleries/${id}`
             );
 
-            console.log(galleryImage.data.data);
             setImage(galleryImage.data.data);
         }
 

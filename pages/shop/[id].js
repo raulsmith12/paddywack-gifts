@@ -1,9 +1,12 @@
 import axios from "axios";
 import Link from "next/link";
+import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 const Item = () => {
+    const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+
     const router = useRouter();
     const { id } = router.query;
     const [item, setItem] = useState([]);
@@ -23,6 +26,23 @@ const Item = () => {
 
         fetchData();
     }, []);
+
+    const createCheckOutSession = async () => {
+        const stripe = await stripePromise;
+        const checkoutSession = await axios.post('/api/create-stripe-session', {
+          item: {
+            picture: image,
+            price: Math.ceil(item.price * 100),
+            title: 'Paddy Wack Gifts - ' + item.name,
+          }
+        });
+        const result = await stripe.redirectToCheckout({
+          sessionId: checkoutSession.data.id,
+        });
+        if (result.error) {
+          alert(result.error.message);
+        }
+    };
 
     return (
         <div className="container">
@@ -59,8 +79,13 @@ const Item = () => {
                             <div className="col" dangerouslySetInnerHTML={{__html: item.description}} />
                         </div>
                         <div className="row">
-                            <div className="col-6">
+                            <div className="col-4">
                                 <h4>{item.price}</h4>
+                            </div>
+                            <div className="col-4">
+                                <button className="btn btn-segundo" onClick={createCheckOutSession}>
+                                    Buy with Stripe
+                                </button>
                             </div>
                         </div>
                     </div>
