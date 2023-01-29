@@ -3,6 +3,8 @@ import Link from "next/link";
 import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { PayPalScriptProvider } from '@paypal/react-paypal-js';
+import PayPalButtonContainer from '../../components/PayPalButtonContainer';
 
 const Item = () => {
     const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
@@ -82,8 +84,17 @@ const Item = () => {
                             <div className="col-4">
                                 <h4>{item.price}</h4>
                             </div>
-                            <div className="col-4">
-                                <button className="btn btn-segundo" onClick={createCheckOutSession}>
+                            <div className="col-4 d-grid gap-2">
+                                <PayPalScriptProvider
+                                    options={{
+                                        "client-id": "test",
+                                        components: "buttons",
+                                        currency: "USD"
+                                    }}
+                                >
+                                    <PayPalButtonContainer currency="USD" showSpinner={false} price={item.price} />
+                                </PayPalScriptProvider>
+                                <button className="btn btn-lg btn-segundo" onClick={createCheckOutSession}>
                                     Buy with Stripe
                                 </button>
                             </div>
