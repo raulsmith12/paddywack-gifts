@@ -47,17 +47,17 @@ const Item = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container-fluid px-0">
             <div className="row">
-                <div className="col-2">
+                <div className="col-md-2 col-sm-12 ps-5">
                     <Link href="/shop">Back to Shop</Link>
                 </div>
-                <div className="col-10">
+                <div className="col-md-10 col-sm-12">
                     <h1 className="display-2">{item.name}</h1>
                 </div>
             </div>
             <div className="row">
-                <div className="col-4">
+                <div className="col-md-4 col-sm-12">
                     <div className="container">
                         <div className="row ms-1">
                             <div className="col px-0 pb-2">
@@ -75,16 +75,16 @@ const Item = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-8">
+                <div className="col-md-8 col-sm-12">
                     <div className="container">
                         <div className="row">
                             <div className="col" dangerouslySetInnerHTML={{__html: item.description}} />
                         </div>
                         <div className="row">
-                            <div className="col-4">
+                            <div className="col-md-4 col-sm-12">
                                 <h4>{item.price}</h4>
                             </div>
-                            <div className="col-4 d-grid gap-2">
+                            <div className="col-md-4 col-sm-12 d-grid gap-2">
                                 <PayPalScriptProvider
                                     options={{
                                         "client-id": "test",

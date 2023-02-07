@@ -46,7 +46,7 @@ const Shop = () => {
                     <div className="container">
                         <div className="row justify-content-center">
                             {filteredItems.map(i => (
-                                <div className="col-4 text-center" key={i.id}>
+                                <div className="col-lg-4 col-md-6 col-sm-12 text-center" key={i.id}>
                                     <div className="card bg-primo text-white my-3">
                                         <div className="card-img-placeholder">
                                             <img src={i.images[0].thumbnail_url} width="100%" alt={i.name} className="card-img-top" />

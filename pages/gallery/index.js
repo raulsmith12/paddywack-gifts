@@ -29,7 +29,7 @@ const Gallery = () => {
                     <div className="container">
                         <div className="row justify-content-center">
                             {images.map(i => (
-                                <div className="col-4 pb-2 text-center" key={i.id}>
+                                <div className="col-lg-4 col-md-6 col-sm-12 pb-2 text-center" key={i.id}>
                                     <div className="card-img-placeholder">
                                         <Link href={"/gallery/" + i.id}>
                                             <img src={i.thumbnail_url} width="95%" alt={i.description} />
