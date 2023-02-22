@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import PayPalButtonContainer from '../../components/PayPalButtonContainer';
 import { PayPalId } from '../../components/PayPalId';
+import Head from "next/head";
 
 const Item = () => {
     // const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
@@ -49,6 +50,11 @@ const Item = () => {
 
     return (
         <div className="container-fluid px-0">
+            <Head>
+                <title>{item.name} - Shop Paddy Wack Homemade Gifts</title>
+                <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
+                <link rel="icon" href="favicon.ico" />
+            </Head>
             <div className="row">
                 <div className="col-md-2 col-sm-12 ps-5">
                     <Link href="/shop">Back to Shop</Link>

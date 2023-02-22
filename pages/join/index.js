@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import JoinForm from "../../components/JoinForm";
 
@@ -19,6 +20,11 @@ const Join = () => {
 
     return (
         <div className="container-fluid">
+            <Head>
+                <title>Join Paddy Wack Homemade Gifts</title>
+                <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
+                <link rel="icon" href="favicon.ico" />
+            </Head>
             <div className="row">
                 <div className="col">
                     <h2 className="display-1">{page.title}</h2>

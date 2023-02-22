@@ -2,6 +2,7 @@ import HomeSlider from "../components/HomeSlider";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import HomeSection from "../components/HomeSection";
+import Head from "next/head";
 
 const Home = () => {
   const [sliders, setSliders] = useState([]);
@@ -20,6 +21,11 @@ const Home = () => {
 
   return (
     <div className="container-fluid px-0">
+      <Head>
+        <title>Paddy Wack Homemade Gifts</title>
+        <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
+        <link rel="icon" href="favicon.ico" />
+      </Head>
       <div className="row mx-0">
         <div className="col px-0">
           <div className="home-slider-container">

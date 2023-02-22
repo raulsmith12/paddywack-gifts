@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
@@ -22,6 +23,11 @@ const Item = () => {
 
     return (
         <div className="container-fluid">
+            <Head>
+                <title>Gallery - Paddy Wack Homemade Gifts</title>
+                <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
+                <link rel="icon" href="favicon.ico" />
+            </Head>
             <div className="row">
                 <div className="col">
                     <h2 className="display-1">Gallery Item</h2>

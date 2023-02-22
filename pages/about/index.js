@@ -1,4 +1,5 @@
 import axios from "axios";
+import Head from "next/head";
 import { useEffect, useState } from "react";
 import Transition from '../../components/Transition';
 
@@ -26,6 +27,11 @@ const About = () => {
 
     return (
         <div className="container-fluid">
+            <Head>
+                <title>About Paddy Wack Homemade Gifts</title>
+                <meta name="description" content="Custom handmade gifts for you or your loved one for any and every occassion." />
+                <link rel="icon" href="favicon.ico" />
+            </Head>
             {aboutPage && (
                 <Transition>
                     <div className="row pt-2">
