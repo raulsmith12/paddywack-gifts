@@ -1,13 +1,14 @@
 import axios from "axios";
 import Link from "next/link";
-import { loadStripe } from '@stripe/stripe-js';
+// import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { PayPalScriptProvider } from '@paypal/react-paypal-js';
 import PayPalButtonContainer from '../../components/PayPalButtonContainer';
+import { PayPalId } from '../../components/PayPalId';
 
 const Item = () => {
-    const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
+    // const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
     const router = useRouter();
     const { id } = router.query;
@@ -29,22 +30,22 @@ const Item = () => {
         fetchData();
     }, []);
 
-    const createCheckOutSession = async () => {
-        const stripe = await stripePromise;
-        const checkoutSession = await axios.post('/api/create-stripe-session', {
-          item: {
-            picture: image,
-            price: Math.ceil(item.price * 100),
-            title: 'Paddy Wack Gifts - ' + item.name,
-          }
-        });
-        const result = await stripe.redirectToCheckout({
-          sessionId: checkoutSession.data.id,
-        });
-        if (result.error) {
-          alert(result.error.message);
-        }
-    };
+    // const createCheckOutSession = async () => {
+    //     const stripe = await stripePromise;
+    //     const checkoutSession = await axios.post('/api/create-stripe-session', {
+    //       item: {
+    //         picture: image,
+    //         price: Math.ceil(item.price * 100),
+    //         title: 'Paddy Wack Gifts - ' + item.name,
+    //       }
+    //     });
+    //     const result = await stripe.redirectToCheckout({
+    //       sessionId: checkoutSession.data.id,
+    //     });
+    //     if (result.error) {
+    //       alert(result.error.message);
+    //     }
+    // };
 
     return (
         <div className="container-fluid px-0">
@@ -87,16 +88,16 @@ const Item = () => {
                             <div className="col-md-4 col-sm-12 d-grid gap-2">
                                 <PayPalScriptProvider
                                     options={{
-                                        "client-id": "test",
+                                        "client-id": PayPalId,
                                         components: "buttons",
                                         currency: "USD"
                                     }}
                                 >
                                     <PayPalButtonContainer currency="USD" showSpinner={false} price={item.price} />
                                 </PayPalScriptProvider>
-                                <button className="btn btn-lg btn-segundo" onClick={createCheckOutSession}>
+                                {/* <button className="btn btn-lg btn-segundo" onClick={createCheckOutSession}>
                                     Buy with Stripe
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     </div>
