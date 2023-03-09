@@ -16,9 +16,6 @@ const Privacy = () => {
                 <div className="col">
                     <div className="container">
                         <div className="row">
-                            <div className="col" dangerouslySetInnerHTML={{__html: page.page_content}} />
-                        </div>
-                        <div className="row">
                             <div className="col">
                                 <p>This privacy notice discloses the privacy practices for Paddy Wack Homemade Gifts LLC, our partner websites and any businesses we are associated with. This privacy notice applies solely to information collected by this website. It will notify you of the following:</p>
                                 <ul className="list-group list-group-flush">
