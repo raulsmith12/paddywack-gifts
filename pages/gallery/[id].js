@@ -37,11 +37,11 @@ const Item = () => {
                 <div className="col">
                     <div className="container">
                         <div className="row">
-                            <div className="col-3">
+                            <div className="col-md-3 col-sm-12">
                                 <Link href="/gallery">Back to Gallery</Link><br /><br />
                                 <p className="display-6">{image.description}</p>
                             </div>
-                            <div className="col-9">
+                            <div className="col-md-9 col-sm-12">
                                 <img src={image.image_url} width="100%" alt={image.description} />
                             </div>
                         </div>

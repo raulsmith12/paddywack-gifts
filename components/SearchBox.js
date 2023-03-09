@@ -1,7 +1,7 @@
 const SearchBox = ({ searchChange }) => {
     return (
         <div className="mb-3 input-group">
-            <span className="input-group-text" id="basic-addon3">Search Shop for</span>
+            <span className="input-group-text" id="basic-addon3">&#128270;</span>
             <input
                 className="form-control"
                 type="search"

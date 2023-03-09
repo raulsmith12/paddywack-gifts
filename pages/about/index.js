@@ -35,11 +35,11 @@ const About = () => {
             {aboutPage && (
                 <Transition>
                     <div className="row pt-2">
-                        <div className="col-7 offset-1">
+                        <div className="col-md-7 col-sm-12 offset-md-1">
                             <h2 className="display-3">{aboutPage.title}</h2>
                             <div dangerouslySetInnerHTML={{ __html: aboutPage.description }} />
                         </div>
-                        <div className="col-3">
+                        <div className="col-3 d-none d-md-block">
                             <img src={aboutPage.image_url} width="80%" alt="About Paddy Wack Gifts" />
                         </div>
                     </div>
@@ -51,7 +51,7 @@ const About = () => {
                     {artists.map(i => (
                         <div className="row pt-2" key={i.id}>
                             <div className="col-3 offset-1">
-                                <img src={i.image_url} width="65%" alt={i.name} />
+                                <img src={i.image_url} width="85%" alt={i.name} />
                             </div>
                             <div className="col-7">
                                 <h4 className="display-5">

@@ -25,7 +25,7 @@ html {
 }
 
 .btn-primo, .btn-segundo {
-	color: white;
+	color: white !important;
 }
 
 .bg-segundo, .btn-segundo {

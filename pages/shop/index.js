@@ -39,8 +39,8 @@ const Shop = () => {
             <div className="row">
                 <div className="col text-right">
                     <div className="container">
-                        <div className="row mx-5 px-5">
-                            <div className="col-12 mx-5 px-5">
+                        <div className="row">
+                            <div className="col-8 offset-2">
                                 <SearchBox searchChange={setSearch} />
                             </div>
                         </div>
