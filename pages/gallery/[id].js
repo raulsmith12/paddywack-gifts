@@ -1,5 +1,6 @@
 import axios from "axios";
 import Head from "next/head";
+import Script from 'next/script';
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

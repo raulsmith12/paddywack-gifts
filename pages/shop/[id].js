@@ -1,5 +1,6 @@
 import axios from "axios";
 import Link from "next/link";
+import Script from 'next/script';
 // import { loadStripe } from '@stripe/stripe-js';
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";

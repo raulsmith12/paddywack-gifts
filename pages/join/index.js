@@ -1,5 +1,6 @@
 import axios from "axios";
 import Head from "next/head";
+import Script from 'next/script';
 import { useEffect, useState } from "react";
 import JoinForm from "../../components/JoinForm";
 

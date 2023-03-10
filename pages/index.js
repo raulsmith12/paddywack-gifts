@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import HomeSection from "../components/HomeSection";
 import Head from "next/head";
+import Script from 'next/script';
 
 const Home = () => {
   const [sliders, setSliders] = useState([]);
