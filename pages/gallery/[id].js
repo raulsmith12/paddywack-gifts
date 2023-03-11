@@ -22,6 +22,9 @@ const Item = () => {
         fetchData();
     }, []);
 
+    const metaurl = `https://paddywackgifts.com/gallery/${id}`;
+    const metadescription = `${image.description} Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand.`;
+
     return (
         <>
             <Head>
@@ -30,15 +33,15 @@ const Item = () => {
                 <meta name="keywords" content="gallery, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content={`https://paddywackgifts.com/gallery/${id}`} />
+                <meta property="og:url" content={metaurl} />
                 <meta property="og:title" content="Gallery Item - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You" />
-                <meta property="og:description" content={`${image.description} Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand.`} />
+                <meta property="og:description" content={metadescription} />
                 <meta property="og:image" content={image.image_url} />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content={`https://paddywackgifts.com/gallery/${id}`} />
+                <meta property="twitter:url" content={metaurl} />
                 <meta property="twitter:title" content="Gallery Item - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You" />
-                <meta property="twitter:description" content={`${image.description} Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand.`} />
+                <meta property="twitter:description" content={metadescription} />
                 <meta property="twitter:image" content={image.image_url} />
                 <link rel="icon" href="favicon.ico" />
             </Head>

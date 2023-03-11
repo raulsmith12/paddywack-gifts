@@ -49,22 +49,25 @@ const Item = () => {
     //     }
     // };
 
+    const metaurl = `https://paddywackgifts.com/shop/${id}`;
+    const metaname = `${item.name} - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You`;
+
     return (
         <>
             <Head>
                 <title>{item.name} - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
                 <meta name="description" content="Shop our online shopping center to find that one-of-a-kind diamond painting or cross-stitch gift for you or your loved one. Whether it's an upcoming anniversary, a birthday, Christmas, or really any occasion, Paddy Wack Homemade Gifts has you covered." />
-                <meta name="keywords" content={`${item.name}, shop, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting`} />
+                <meta name="keywords" content="shop, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
 
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content={`https://paddywackgifts.com/shop/${id}`} />
-                <meta property="og:title" content={`${item.name} - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You`} />
+                <meta property="og:url" content={metaurl} />
+                <meta property="og:title" content={metaname} />
                 <meta property="og:description" content="Shop our online shopping center to find that one-of-a-kind diamond painting or cross-stitch gift for you or your loved one. Whether it's an upcoming anniversary, a birthday, Christmas, or really any occasion, Paddy Wack Homemade Gifts has you covered." />
                 <meta property="og:image" content={image} />
 
                 <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:url" content={`https://paddywackgifts.com/shop/${id}`} />
-                <meta property="twitter:title" content={`${item.name} - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You`} />
+                <meta property="twitter:url" content={metaurl} />
+                <meta property="twitter:title" content={metaname} />
                 <meta property="twitter:description" content="Shop our online shopping center to find that one-of-a-kind diamond painting or cross-stitch gift for you or your loved one. Whether it's an upcoming anniversary, a birthday, Christmas, or really any occasion, Paddy Wack Homemade Gifts has you covered." />
                 <meta property="twitter:image" content={image} />
                 <link rel="icon" href="favicon.ico" />
