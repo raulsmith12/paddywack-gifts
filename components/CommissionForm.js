@@ -39,12 +39,14 @@ const CommissionForm = () => {
     const imageUpload = e => {
         let file = e.target.files[0];
         createImage(file);
+        console.log(file);
     }
 
     const createImage = (file) => {
         let reader  = new FileReader();
         reader.onload = (e) => {
             setUploadImage(e.target.result);
+            console.log(e.target.result);
         };
         reader.readAsDataURL(file);
     }
@@ -139,11 +141,7 @@ const CommissionForm = () => {
                             <input type="file" onChange={imageUpload} className="form-control my-2" />
                             <button type="submit" className="btn btn-outline-success">Upload</button>
                         </form>
-                        {imagePreview ?? (
-                            <>
-                                <img src={imagePreview} width="100%" alt="preview" />
-                            </>
-                        )}
+                        { imagePreview && <img src={imagePreview} width="100%" alt="preview" /> }
                     </div>
                 </div>
             </div>
