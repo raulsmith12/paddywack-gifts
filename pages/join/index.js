@@ -17,7 +17,7 @@ const Join = () => {
         };
 
         fetchData();
-    }, []);
+    }, [page]);
 
     return (
         <>

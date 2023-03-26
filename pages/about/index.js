@@ -24,7 +24,7 @@ const About = () => {
         };
 
         fetchData();
-    }, [])
+    }, [aboutPage, artists])
 
     return (
         <>

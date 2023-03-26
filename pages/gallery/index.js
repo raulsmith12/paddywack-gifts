@@ -17,7 +17,7 @@ const Gallery = () => {
         }
 
         fetchData();
-    }, []);
+    }, [images]);
 
     return (
         <>

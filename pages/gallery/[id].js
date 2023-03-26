@@ -20,7 +20,7 @@ const Item = () => {
         }
 
         fetchData();
-    }, []);
+    }, [image]);
 
     const metaurl = `https://paddywackgifts.com/gallery/${id}`;
     const metadescription = `${image.description} Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand.`;

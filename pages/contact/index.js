@@ -17,7 +17,7 @@ const Contact = () => {
         };
 
         fetchData();
-    }, []);
+    }, [page]);
 
     return (
         <>

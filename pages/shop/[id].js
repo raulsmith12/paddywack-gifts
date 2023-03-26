@@ -30,7 +30,7 @@ const Item = () => {
         };
 
         fetchData();
-    }, []);
+    }, [item]);
 
     // const createCheckOutSession = async () => {
     //     const stripe = await stripePromise;

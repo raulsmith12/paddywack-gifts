@@ -19,7 +19,7 @@ const Shop = () => {
         }
 
         fetchData();
-    });
+    }, [items]);
 
     const filteredItems = items.filter((item) => {
         return item.name.toLocaleLowerCase().includes(search);

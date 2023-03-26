@@ -17,7 +17,7 @@ const Commission = () => {
         };
 
         fetchData();
-    }, []);
+    }, [page]);
 
     return (
         <>

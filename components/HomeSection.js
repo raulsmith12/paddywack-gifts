@@ -15,7 +15,7 @@ const HomeSection = () => {
         }
 
         fetchData();
-    }, [])
+    }, [sections])
 
     return (
         <div className="row mx-0">
