@@ -53,8 +53,25 @@ html {
 }
 
 .carousel-container {
-	height: 25rem;
 	overflow: hidden
+}
+
+@media (max-width: 575px) {
+	.carousel-container {
+		height: 7rem;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 750px) {
+	.carousel-container {
+		height: 12rem;
+	}
+}
+
+@media (min-width: 751px) {
+	.carousel-container {
+		height: 25rem;
+	}
 }
 
 .card-img-placeholder {
