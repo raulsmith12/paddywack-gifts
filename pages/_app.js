@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Transition from '../components/Transition';
 import { useEffect } from 'react';
+import CookieConsent from "react-cookie-consent";
 
 function MyApp({ Component, pageProps }) {
   
@@ -19,10 +20,14 @@ function MyApp({ Component, pageProps }) {
       </Transition>
       <div className="my-5 py-5">&nbsp;</div>
       <Footer />
-      <div className="alert alert-success alert-dismissible fade show fixed-bottom" role="alert">
-        <p>Paddy Wack Homemade Gifts uses cookies to better the web experience for everyone. We have a strict privacy policy that prohibits us from selling user information to third party advertisers.</p>
-        <button type="button" className="btn-close" data-bs-dismiss="alert" aria-label="Close" />
-      </div>
+      <CookieConsent
+        location="bottom"
+        buttonText="Okay"
+        buttonStyle={{ backgroundColor: "#216093", color: "white" }}
+        style={{ backgroundColor: "#922667", zIndex: 9999 }}
+      >
+        Your privacy is of the utmost importance. We use cookies to enhance the web experience for our customers and will not sell your information to third party advertisers. Please refer to the Paddy Wack Homemade Gifts privacy policy for more details.
+      </CookieConsent>
     </div>
   )
 }
