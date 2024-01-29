@@ -31,6 +31,7 @@ const Item = () => {
                 <title>Gallery Item - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
                 <meta name="description" content={`${image.description} Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand.`} />
                 <meta name="keywords" content="gallery, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content={metaurl} />
@@ -44,6 +45,7 @@ const Item = () => {
                 <meta property="twitter:description" content={metadescription} />
                 <meta property="twitter:image" content={image.image_url} />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script

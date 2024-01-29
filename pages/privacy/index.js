@@ -8,6 +8,7 @@ const Privacy = () => {
                 <title>Privacy Policy - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
                 <meta name="description" content="The privacy of our customers is held in the highest regards. Please refer to our privacy policy for more details." />
                 <meta name="keywords" content="privacy policy, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://paddywackgifts.com/privacy" />
@@ -21,6 +22,7 @@ const Privacy = () => {
                 <meta property="twitter:description" content="The privacy of our customers is held in the highest regards. Please refer to our privacy policy for more details." />
                 <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script

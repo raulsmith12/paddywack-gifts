@@ -25,6 +25,7 @@ const Commission = () => {
                 <title>Custom Commission Creator - Paddy Wack Homemade Gifts - Create and Submit Your Custom Commission Today</title>
                 <meta name="description" content="Upload your favorite image, select the size and shape of your custom commission cross-stitch, and upload to our server, where one of our talented artists will create your amazing custom piece." />
                 <meta name="keywords" content="custom commission, creator, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://paddywackgifts.com/creator" />
@@ -38,6 +39,7 @@ const Commission = () => {
                 <meta property="twitter:description" content="Upload your favorite image, select the size and shape of your custom commission cross-stitch, and upload to our server, where one of our talented artists will create your amazing custom piece." />
                 <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script

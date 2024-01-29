@@ -8,6 +8,7 @@ export default function Custom404() {
                 <title>404 - Not Found - Paddy Wack Homemade Gifts</title>
                 <meta name="description" content="The page you are looking for cannot be found. Please try typing that in again." />
                 <meta name="keywords" content="404, page not found" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://paddywackgifts.com/404" />
@@ -21,6 +22,7 @@ export default function Custom404() {
                 <meta property="twitter:description" content="The page you are looking for cannot be found. Please try typing that in again." />
                 <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script

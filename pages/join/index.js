@@ -25,6 +25,7 @@ const Join = () => {
                 <title>Join Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
                 <meta name="description" content="If you have an artistic talent that you want to share with the world and you are interested in joining Paddy Wack Homemade Gifts, we are interested in you. Join our team of talented artists today!" />
                 <meta name="keywords" content="join, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://paddywackgifts.com/join" />
@@ -38,6 +39,7 @@ const Join = () => {
                 <meta property="twitter:description" content="If you have an artistic talent that you want to share with the world and you are interested in joining Paddy Wack Homemade Gifts, we are interested in you. Join our team of talented artists today!" />
                 <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script

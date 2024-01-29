@@ -32,6 +32,7 @@ const About = () => {
                 <title>About Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
                 <meta name="description" content="Learn more about both the company and the artists behind Paddy Wack Homemade Gifts. Paddy Wack Homemade Gifts is dedicated to delivering high quality custom handmade gifts no matter the occasion." />
                 <meta name="keywords" content="Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://paddywackgifts.com/about" />
@@ -45,6 +46,7 @@ const About = () => {
                 <meta property="twitter:description" content="Learn more about both the company and the artists behind Paddy Wack Homemade Gifts. Paddy Wack Homemade Gifts is dedicated to delivering high quality custom handmade gifts no matter the occasion." />
                 <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script

@@ -26,6 +26,7 @@ const Home = () => {
             <title>Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
             <meta name="description" content="Paddy Wack Homemade Gifts is the home of custom diamond painting or cross-stitch gifts for you or your loved one. Funny, serious, sentimental, sarcastic, if you can think of a gift in your head, there's a good chance Paddy Wack Homemade Gifts can create it for you." />
             <meta name="keywords" content="Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+            <meta name="robots" content="all" />
 
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://paddywackgifts.com" />
@@ -39,6 +40,7 @@ const Home = () => {
             <meta property="twitter:description" content="Paddy Wack Homemade Gifts is the home of custom diamond painting or cross-stitch gifts for you or your loved one. Funny, serious, sentimental, sarcastic, if you can think of a gift in your head, there's a good chance Paddy Wack Homemade Gifts can create it for you." />
             <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
             <link rel="icon" href="favicon.ico" />
+            <link rel="manifest" href="manifest.json" />
         </Head>
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
         <Script

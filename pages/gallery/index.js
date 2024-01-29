@@ -25,6 +25,7 @@ const Gallery = () => {
                 <title>Gallery - Paddy Wack Homemade Gifts - Custom Handmade Gifts Tailor-Made for You</title>
                 <meta name="description" content="Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand." />
                 <meta name="keywords" content="gallery, Paddy Wack Homemade Gifts, custom gifts, cross-stitch, diamond painting" />
+                <meta name="robots" content="all" />
 
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://paddywackgifts.com/gallery" />
@@ -38,6 +39,7 @@ const Gallery = () => {
                 <meta property="twitter:description" content="Take a look in our gallery at past commission pieces that the artists at Paddy Wack Homemade Gifts have made for customers like you over the years. Our gallery pieces are all one-of-a-kind and custom made by hand." />
                 <meta property="twitter:image" content="https://paddywackgifts.com/img/banner_white.png" />
                 <link rel="icon" href="favicon.ico" />
+                <link rel="manifest" href="manifest.json" />
             </Head>
             <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-S1GM0NB8JS"/>
             <Script
